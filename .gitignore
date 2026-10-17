@@ -5,3 +5,7 @@ Saved/
 .vs/
 *.sln
 *.target.cs
+# --- 超过 GitHub 100MB 限制的大文件（仅本地保留）---
+Content/Megaplant_Library/Tree_Japanese_Medlar/Textures/T_Japanese_Medlar_01_Bark_NAH.uasset
+Content/StylizedGrassFlowersPack/Map/Landscape.umap
+Content/Megaplant_Library/Tree_Yoshino_Cherry/Instances/SKM_Branch_Yoshino_Cherry_01.uasset
