@@ -15,6 +15,15 @@ public class CanvasTool : ModuleRules
 			"EnhancedInput"
 		});
 
+		if (Target.bBuildEditor)
+		{
+			PrivateDependencyModuleNames.AddRange(new string[]
+			{
+				"UnrealEd",
+				"Kismet"
+			});
+		}
+
 		PrivateDependencyModuleNames.AddRange(new string[]
 		{
 			"RenderCore",
