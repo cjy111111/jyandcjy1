@@ -26,4 +26,16 @@ public:
 										const FString& LeafMeshPath,
 										FVector RelativeLocation,
 										FVector RelativeScale);
+
+	/**
+	 * Sets bHiddenInEditor on every component named ComponentName inside all blueprints under
+	 * BlueprintFolder. This only hides the component's editor visualiser (the red collision
+	 * circles); collision, overlaps and runtime behaviour are untouched.
+	 *
+	 * @return number of blueprints changed, or -1 on failure
+	 */
+	UFUNCTION(BlueprintCallable, Category = "CanvasTool")
+	static int32 SetComponentHiddenInEditor(const FString& BlueprintFolder,
+											const FString& ComponentName,
+											bool bHiddenInEditor);
 };
